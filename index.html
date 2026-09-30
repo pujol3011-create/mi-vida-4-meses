@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>Para Rai ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hearts"></div>
+
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">PARA MI NIÑA</p>
+      <h1>Nosotros<span>♡</span></h1>
+      <p class="subtitle">Desde el 2 de junio de 2026</p>
+      <button class="enter-btn" onclick="scrollToSection('historia')">Nuestra historia ↓</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro reveal">
+      <p class="section-label">02 · 06 · 2026</p>
+      <h2>Cuatro meses.<br><em>Una historia.</em></h2>
+      <p>
+        Han pasado 4 meses solo mi amor, pero parece que llevemos años juntos y
+        cada dia  quiero pasar mas tiempo contigo. Lograremos nuestros oibjetivos juntos.
+      </p>
+    </section>
+
+    <section id="historia" class="story reveal">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>Nuestra historia</h2>
+      </div>
+      <div class="story-card">
+        <p class="date">2 DE JUNIO DE 2026</p>
+        <h3>El día que empezó todo</h3>
+        <p>
+          Todavia me acuerdo cuando nos conocimos, bueno como me viste en el oliver. 
+          Dicen q todo pasa por algo y yo creo que eso estaba escrito en algún sitio para que 
+          tu y yo nos convertieramos en nosotros.
+          Han pasado muchas cosas entre medio de toda nuestra historia pero ha pasado finalmente lo quee tenia que ocurrir
+          Te amo mi vida.
+        </p>
+      </div>
+      <div class="story-card">
+        <p class="date">Y DESPUÉS...</p>
+        <h3>Los pequeños momentos</h3>
+        <p>
+          Tenemos un monton de mejores momentos, pero los que mas me gustan son todos los que este contigo. Cada abrazo, cada mirada nuestra,
+          cada miarada tuya como bebe. Desde que empece contigo solo puedo decir que estoy feliz todo el dia y me haces ser quien soy ahora.
+          Pero en si no hay un recuerdo por encima de los demas, porque todos los recuerdos contigo son los mejores que podre tener en toda mi vida
+          y que vayan sumando.
+        </p>
+      </div>
+    </section>
+
+    <section class="counter-section reveal">
+      <p class="section-label">TIEMPO JUNTOS</p>
+      <h2>Y seguimos sumando...</h2>
+      <div class="counter">
+        <div><strong id="days">0</strong><span>DÍAS</span></div>
+        <div><strong id="hours">0</strong><span>HORAS</span></div>
+        <div><strong id="minutes">0</strong><span>MINUTOS</span></div>
+        <div><strong id="seconds">0</strong><span>SEGUNDOS</span></div>
+      </div>
+      <p class="counter-note">desde el 2 de junio de 2026 ♡</p>
+    </section>
+
+    <section class="music reveal">
+      <div class="section-heading">
+        <span>02</span>
+        <h2>Nuestra canción</h2>
+      </div>
+
+      <div class="music-card">
+        <div class="music-disc">♫</div>
+        <p class="section-label">PARA NOSOTROS</p>
+        <h3>Algo Bonito REMIX</h3>
+        <p class="artists">Nyno Vargas · Omar Montes · Dany Ome · Kevincito El 13</p>
+        <p class="music-text">
+          Porque algunas canciones terminan convirtiéndose en recuerdos.
+          Y esta siempre tendrá un poquito de nosotros.
+        </p>
+        <a class="music-btn"
+           href="https://www.youtube.com/watch?v=yx33C3jJNcY"
+           target="_blank" rel="noopener">
+          ▶ Escuchar nuestra canción
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery reveal">
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Nuestros recuerdos</h2>
+      </div>
+      <p class="gallery-intro">Seis recuerdos para guardar esta etapa de nosotros. ♡</p>
+      <div class="photos">
+        <button class="photo real-photo" type="button" onclick="openPhoto(this)"><img src="fotos/Foto1_Denia.JPG" alt="Recuerdo juntos 01"></button>
+        <button class="photo real-photo" type="button" onclick="openPhoto(this)"><img src="fotos/IMG_1825.jpeg" alt="Recuerdo juntos 02"></button>
+        <button class="photo real-photo" type="button" onclick="openPhoto(this)"><img src="fotos/IMG_1853.jpeg" alt="Recuerdo juntos 03"></button>
+        <button class="photo real-photo" type="button" onclick="openPhoto(this)"><img src="fotos/22340873-6c13-4ad9-a4e2-ea10c8a1d8f8.JPG" alt="Recuerdo juntos 04"></button>
+        <button class="photo real-photo" type="button" onclick="openPhoto(this)"><img src="fotos/ad6fddfc-d0be-4765-9d7e-0f1d08251b85.JPG" alt="Recuerdo juntos 05"></button>
+        <button class="photo real-photo" type="button" onclick="openPhoto(this)"><img src="fotos/e7e28d19-a461-429a-8643-db90dd1aedd8.JPG" alt="Recuerdo juntos 06"></button>
+      </div>
+      <div id="photoLightbox" class="photo-lightbox" aria-hidden="true" onclick="closePhoto(event)">
+        <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+        <img id="photoLightboxImage" src="" alt="Recuerdo ampliado">
+      </div>
+    </section>
+
+<section id="viajes" class="travel-section reveal">
+      <div class="section-heading">
+        <span>04</span>
+        <h2>Nuestros viajes</h2>
+      </div>
+      <p class="travel-intro">
+        Los lugares que hemos conocido juntos y todos los que todavía nos quedan por descubrir, los podemos ir añadiendo aqui mi vida.
+      </p>
+
+      <div class="travel-list">
+        <article class="travel-card">
+          <div class="travel-cover">
+            <div class="travel-cover-placeholder">
+              <span>🇮🇹</span>
+              <small>VIAJES</small>
+              <h3>Denia</h3>
+              <p>España · 2026</p>
+            </div>
+          </div>
+          <div class="travel-content">
+            <div class="travel-heading">
+              <div>
+                <p class="travel-date">DENIA · ESPAÑA</p>
+                <h3>Nuestra aventura en Denia</h3>
+              </div>
+              <span class="travel-heart">♡</span>
+            </div>
+            <p class="travel-description">Aquí podemos guardar nuestras fotos, recuerdos y todo lo que vivimos en denia amor.</p>
+            <div class="travel-gallery">
+              <button class="travel-photo" type="button" onclick="openTravelPhoto(this)">
+                <img src="fotos/Foto1_Denia.JPG" alt="Denia 01">
+              </button>
+              <button class="travel-photo placeholder-photo" type="button" onclick="openTravelPhoto(this)">
+                <span>Foto 02</span>
+              </button>
+              <button class="travel-photo placeholder-photo" type="button" onclick="openTravelPhoto(this)">
+                <span>Foto 03</span>
+              </button>
+              <button class="travel-photo placeholder-photo" type="button" onclick="openTravelPhoto(this)">
+                <span>Foto 04</span>
+              </button>
+            </div>
+            <p class="travel-tip">📸 Añade las fotos del viaje dentro de la carpeta correspondiente.</p>
+          </div>
+        </article>
+
+        <article class="travel-card">
+          <div class="travel-cover">
+            <div class="travel-cover-placeholder">
+              <span>🇫🇷</span>
+              <small>OTRO VIAJE</small>
+              <h3>París</h3>
+              <p>Francia</p>
+            </div>
+          </div>
+          <div class="travel-content">
+            <div class="travel-heading">
+              <div>
+                <p class="travel-date">PARÍS · FRANCIA</p>
+                <h3>Nuestros recuerdos en París</h3>
+              </div>
+              <span class="travel-heart">♡</span>
+            </div>
+            <p class="travel-description">Otro álbum para guardar cada momento de nuestro viaje.</p>
+            <div class="travel-gallery">
+              <button class="travel-photo placeholder-photo" type="button" onclick="openTravelPhoto(this)"><span>Foto 01</span></button>
+              <button class="travel-photo placeholder-photo" type="button" onclick="openTravelPhoto(this)"><span>Foto 02</span></button>
+              <button class="travel-photo placeholder-photo" type="button" onclick="openTravelPhoto(this)"><span>Foto 03</span></button>
+              <button class="travel-photo placeholder-photo" type="button" onclick="openTravelPhoto(this)"><span>Foto 04</span></button>
+            </div>
+            <p class="travel-tip">📸 Cambia los huecos por tus fotos dentro de <strong>viajes/paris/</strong>.</p>
+          </div>
+        </article>
+
+        <article class="travel-card travel-card-empty">
+          <div class="travel-content">
+            <div class="travel-heading">
+              <div>
+                <p class="travel-date">PRÓXIMO VIAJE</p>
+                <h3>Un lugar por descubrir</h3>
+              </div>
+              <span class="travel-heart">♡</span>
+            </div>
+            <p class="travel-description">Cuando tengamos otro destino, podemos añadir aquí todas las fotos para guardarlas mi vida.</p>
+            <div class="travel-next">
+              <span>✈</span>
+              <p>¿Dónde será nuestra próximo viaje?</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="travel-note">El mundo es más bonito contigo. ♡</div>
+    </section>
+
+    <div id="travelLightbox" class="travel-lightbox" aria-hidden="true" onclick="closeTravelPhoto(event)">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+      <img id="lightboxImage" src="" alt="Foto del viaje">
+    </div>
+
+    <section class="letter reveal">
+      <p class="section-label">05 · PARA TI</p>
+      <div class="letter-paper">
+        <p class="small">Rai,</p>
+        <h2>Una carta con el corazón<br><em>para ti.</em></h2>
+        <p>
+          Cuatro meses pueden parecer poco tiempo, pero siempre que lo pienso amor se me hace raro
+          porque parecce que llevemos un montón más. Desde que llegaste a mi vida solo he pensado en cuidarte
+          y tratarte como te mereces, erres mi mejor apoyo cada dia y te lo agradezco. Eres lo que mas amo en toda mi vida.
+        </p>
+        <p>
+          Gracias por todo lo que haces por mi, cuando he tenido un momento malo siempre has estado alli apoyandome, yo me acuerdo de todo 
+          lo que haces por mi, se que me amas como yo te amo. Esas noches que he ido a verte y vengo(kira vengoo) con hambre siempre me preparas algo ,
+          cuando necesito cualquier cosa estas alli. Pero lo mas importante és que se que cuando tengo un mal dia o no quiero estar con nadie tu eres la 
+          unica persona que me hace estar como en mi casa, tu eres mi casa mi todo. Quiero que sigamos por mas meses a tu lado.
+          Siempre te cuidaré todo lo que haga falta para que seas la mas feliz de todos.
+        </p>
+        <p>
+          Esta página es solo una pequeña forma de decirte algo que quizá
+          no digo suficientes veces:
+          <strong>Te amoooo mi vida y eres lo unico que pienso en cada momento, eres mi otra mitad.</strong>
+        </p>
+        <p>
+          Y si estos cuatro meses son solo el principio, quiero descubrir
+          contigo todo lo que queda por venir y llegar a viejos juntos.
+        </p>
+        <p class="signature">Te quiero, mi niña. ♡</p>
+      </div>
+    </section>
+
+    <section class="final reveal">
+      <div class="final-heart">♡</div>
+      <p class="section-label">02 · 06 · 2026</p>
+      <h2>Esto no es<br><em>el final.</em></h2>
+      <p>Es solo el comienzo de nuestra historia.</p>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con amor para mi niña ♡
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
